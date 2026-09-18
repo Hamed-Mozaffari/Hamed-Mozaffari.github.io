@@ -1,7 +1,7 @@
 ---
-title: "Projects"
+title: "Project"
 layout: page
-permalink: /projects/
+permalink: /project/
 ---
 
 # Projects
