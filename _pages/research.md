@@ -28,6 +28,7 @@ permalink: /research/
 <div class="research-card">
 <div class="research-body">
 <h2 class="research-title">Remote Sensing and GIS</h2>
+  <img src="{{ '/images/Remote Sensing and GIS.jpg.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Remote Sensing">
 <p class="research-desc">Applying satellite, drone, and thermographic imagery together with spectral analysis to infrastructure and construction monitoring. The focus is on building tools for large-area surveillance, hazard detection, and geospatial data interpretation, including hyperspectral imaging and LiDAR.</p>
 </div>
 </div>
@@ -43,6 +44,7 @@ permalink: /research/
 <div class="research-card">
 <div class="research-body">
 <h2 class="research-title">Internet of Things</h2>
+<img src="{{ '/images/IoT.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Internet of Things">
 <p class="research-desc">Integrating electronic systems and IoT frameworks to enable intelligent sensing, data acquisition, and real-time monitoring in research environments. Applications include asset tracking, environmental monitoring, and sensor networks that feed digital twin models.</p>
 </div>
 </div>
@@ -50,6 +52,7 @@ permalink: /research/
 <div class="research-card">
 <div class="research-body">
 <h2 class="research-title">Digital Twins and BIM</h2>
+  <img src="{{ '/images/DT.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt=" Digital Twins">
 <p class="research-desc">Researching digital transformation in the built environment through BIM methodologies, openBIM standards, and digital twin technologies for lifecycle optimization. The emphasis is on BIM-based AI and IoT systems, including the integration of fire risk assessment into BIM workflows.</p>
 </div>
 </div>
