@@ -8,26 +8,26 @@ permalink: /
 <p class="home-hero-sub">{{ site.title }}, {{ site.institution }}</p>
 
 <div class="chip-container" markdown="0">
-<a href="{{ '/research' | relative_url }}" class="chip">Quantum Electrodynamics</a>
-<a href="{{ '/research' | relative_url }}" class="chip">Path Integrals</a>
-<a href="{{ '/research' | relative_url }}" class="chip">Superfluidity</a>
-<a href="{{ '/research' | relative_url }}" class="chip">Parton Model</a>
-<a href="{{ '/research' | relative_url }}" class="chip">Quantum Computing</a>
-<a href="{{ '/research' | relative_url }}" class="chip">Nanotechnology</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Artificial Intelligence</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Computer Vision</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Remote Sensing</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Robotics &amp; Automation</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Internet of Things</a>
+<a href="{{ '/research' | relative_url }}" class="chip">Digital Twins &amp; BIM</a>
 </div>
 
-Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
-It plays a crucial role in our understanding of the fundamental laws of the universe and the fundamental particles that make up all matter.
-Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
+My research applies artificial intelligence, computer vision, and remote sensing to the built environment.
+Working with the Industrialized and Digitalized Construction team at the National Research Council Canada, I develop tools that make construction safer, faster, and more precise — from autonomous drones that inspect confined structures, to cloud-based models that monitor infrastructure and detect wildfire risk across large landscapes.
+The common thread is turning visual and sensor data into decisions that engineers can act on.
 
 <div class="callout callout-success" markdown="0">
-<div class="callout-title">{% include icon.html name="award" class="callout-icon" %} Nobel Prize in Physics, 1965</div>
-<p>Awarded the Nobel Prize jointly with Julian Schwinger and Shin'ichiro Tomonaga for fundamental work in quantum electrodynamics, with deep-ploughing consequences for the physics of elementary particles.</p>
+<div class="callout-title">{% include icon.html name="award" class="callout-icon" %} Director General Innovation Award, 2022</div>
+<p>Recognized by the National Research Council Canada for contributions to the AI4L project, applying artificial intelligence and emerging technology to improve safety in Canadian transportation.</p>
 </div>
 
 <div class="banner-frame" markdown="0">
-<img src="{{ '/images/banner.webp' | relative_url }}" alt="Feynman diagrams" width="1400" height="449" loading="lazy">
-<div class="banner-caption">Examples of Feynman diagrams. Feynman R., <em>The theory of positrons. Phys. Rev.</em> (1949)</div>
+<img src="{{ '/images/banner.webp' | relative_url }}" alt="Research banner" width="1400" height="449" loading="lazy">
+<div class="banner-caption">Add your own caption here.</div>
 </div>
 
 {% capture selected %}{% bibliography --query @*[selected=true] %}{% endcapture %}
@@ -42,7 +42,7 @@ Research in theoretical physics helps us to make predictions about how the unive
 
 ## About me
 
-I am a physicist working in the field of quantum mechanics and quantum electrodynamics.
-I received my undergraduate degree in physics from the Massachusetts Institute of Technology (MIT) in 1939 and went on to earn my PhD from Princeton University in 1942.
-After completing my doctoral studies, I worked on the Manhattan Project, where I helped develop the first atomic bombs.
-After the war, I returned to academia, holding teaching and research positions at Cornell and now at the California Institute of Technology.
+I am a Research Officer at the Construction Research Centre, National Research Council Canada, where I work on artificial intelligence, robotics, remote sensing, and IoT for modular, prefabricated, and on-site construction.
+I hold a Ph.D. in Electrical Engineering and Computer Science from the University of Ottawa, with a specialization in artificial intelligence and computer vision.
+Alongside my research, I am a Status-Only Assistant Professor in Mechanical and Industrial Engineering at the University of Toronto and a part-time lecturer at Carleton University, where I teach remote sensing technologies.
+I am a licensed Professional Engineer, a Senior Member of IEEE, a certified thermographer, and an advanced UAV pilot.
