@@ -9,50 +9,44 @@ permalink: /research/
 <div class="research-grid">
 
 <div class="research-card">
-<img src="{{ '/images/research/qed.svg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Feynman diagram">
 <div class="research-body">
-<h2 class="research-title">Quantum Electrodynamics</h2>
-<p class="research-desc">Development of the path integral formulation of quantum mechanics and its application to quantum electrodynamics (QED). This work introduced Feynman diagrams as a powerful tool for calculating particle interactions, providing an intuitive visual representation of complex quantum processes.</p>
+<h2 class="research-title">Artificial Intelligence</h2>
+<p class="research-desc">Developing and applying AI-driven algorithms for predictive modelling, data analytics, and automation across multidisciplinary research domains. Recent work includes deep learning for flashover prediction, large language models for document and contract analysis, and generative AI for fire safety applications.</p>
 </div>
 </div>
 
 <div class="research-card">
-<img src="{{ '/images/research/superfluidity.svg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Superfluid helium">
 <div class="research-body">
-<h2 class="research-title">Superfluidity</h2>
-<p class="research-desc">Quantum mechanical explanation of the behavior of liquid helium near absolute zero. Using path integral methods, we developed a microscopic theory of the lambda transition and explained the energy spectrum of excitations in superfluid helium, including the roton minimum.</p>
+<h2 class="research-title">Computer Vision</h2>
+<p class="research-desc">Advancing visual data analysis for object recognition, spatial mapping, and quantitative image-based assessment in scientific applications. This includes convolutional and transformer architectures for detection and segmentation, and thermal imagery analysis for early anomaly detection in critical infrastructure.</p>
 </div>
 </div>
 
 <div class="research-card">
-<img src="{{ '/images/research/partons.svg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Parton model">
 <div class="research-body">
-<h2 class="research-title">Parton Model</h2>
-<p class="research-desc">A model describing the internal structure of hadrons in terms of point-like constituents called partons. This framework proved essential for interpreting deep inelastic scattering experiments at SLAC and laid the groundwork for quantum chromodynamics (QCD).</p>
+<h2 class="research-title">Remote Sensing and GIS</h2>
+<p class="research-desc">Applying satellite, drone, and thermographic imagery together with spectral analysis to infrastructure and construction monitoring. The focus is on building tools for large-area surveillance, hazard detection, and geospatial data interpretation, including hyperspectral imaging and LiDAR.</p>
 </div>
 </div>
 
 <div class="research-card">
-<img src="{{ '/images/research/quantum-computing.svg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Quantum circuit">
 <div class="research-body">
-<h2 class="research-title">Quantum Computing</h2>
-<p class="research-desc">Pioneering proposals for using quantum mechanical systems to perform computation. We demonstrated that classical computers cannot efficiently simulate quantum physics, motivating the development of quantum computers that exploit superposition and entanglement.</p>
+<h2 class="research-title">Robotics and Automation</h2>
+<p class="research-desc">Exploring robotic technologies and automated systems that improve precision, efficiency, and safety in construction and infrastructure research. Work spans autonomous mobile robots, UAV platforms, and ROS-based development for site surveying and quality control.</p>
 </div>
 </div>
 
 <div class="research-card">
-<img src="{{ '/images/research/nanotechnology.svg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Atomic manipulation">
 <div class="research-body">
-<h2 class="research-title">Nanotechnology</h2>
-<p class="research-desc">Exploration of the physical possibilities of manipulating matter at the atomic scale. The talk "There's Plenty of Room at the Bottom" envisioned machines that could arrange atoms one by one, anticipating modern nanotechnology and molecular manufacturing.</p>
+<h2 class="research-title">Internet of Things</h2>
+<p class="research-desc">Integrating electronic systems and IoT frameworks to enable intelligent sensing, data acquisition, and real-time monitoring in research environments. Applications include asset tracking, environmental monitoring, and sensor networks that feed digital twin models.</p>
 </div>
 </div>
 
 <div class="research-card">
-<img src="{{ '/images/research/weak-interactions.svg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Weak interaction diagram">
 <div class="research-body">
-<h2 class="research-title">Weak Interactions</h2>
-<p class="research-desc">Development of the V-A theory of the weak interaction with Murray Gell-Mann. This theory correctly predicted the structure of weak decays and was later incorporated into the electroweak unification by Weinberg, Salam, and Glashow.</p>
+<h2 class="research-title">Digital Twins and BIM</h2>
+<p class="research-desc">Researching digital transformation in the built environment through BIM methodologies, openBIM standards, and digital twin technologies for lifecycle optimization. The emphasis is on BIM-based AI and IoT systems, including the integration of fire risk assessment into BIM workflows.</p>
 </div>
 </div>
 
