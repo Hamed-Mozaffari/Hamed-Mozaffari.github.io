@@ -1,22 +1,22 @@
 # ============================================================
 # STEP 1: Your Identity (required)
 # ============================================================
-name: "Richard Feynman"
-title: "Professor of Physics"
-institution: "California Institute of Technology"
-email: richard@university.edu
-photo: headshot.jpg  # place your photo in images/
+name: "M. Hamed Mozaffari"
+title: "Research Officer"
+institution: "National Research Council Canada / Conseil national de recherches Canada"
+email: MHamed.MozaffariMaaref@nrc-cnrc.gc.ca
+photo: Hamed.jpeg  # place your photo in images/
 
 # ============================================================
 # STEP 2: Your Links (optional -- leave blank to hide an icon)
 # ============================================================
 links:
-  google_scholar: "https://scholar.google.com/citations?user=B7vSqZsAAAAJ"
+  google_scholar: "https://scholar.google.com/citations?user=tu-iT7AAAAAJ&hl=en"
   github: "https://github.com/"
-  researchgate: "https://www.researchgate.net/"
-  orcid: ""
+  researchgate: "https://www.researchgate.net/profile/Mohammad_Hamed_Mozaffari"
+  NRC: "https://nrc.canada.ca/en/corporate/contact-us/nrc-directory-science-professionals/hamed-mozaffari-maaref"
   twitter: ""
-  linkedin: ""
+  linkedin: "https://www.linkedin.com/in/hamed-mozaffari"
   cv: ""  # e.g., "papers/cv.pdf"
 
 # ============================================================
