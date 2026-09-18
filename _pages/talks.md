@@ -4,7 +4,7 @@ layout: page
 permalink: /project/
 ---
 
-# Projects
+# Project
 
 {% if site.data.talks.size > 0 %}
 <div class="section-card" markdown="0">
