@@ -12,7 +12,7 @@ photo: Hamed.jpeg  # place your photo in images/
 # ============================================================
 links:
   google_scholar: "https://scholar.google.com/citations?user=tu-iT7AAAAAJ&hl=en"
-  github: "https://github.com/"
+  github: "https://github.com/Hamed-Mozaffari"
   researchgate: "https://www.researchgate.net/profile/Mohammad_Hamed_Mozaffari"
   NRC: "https://nrc.canada.ca/en/corporate/contact-us/nrc-directory-science-professionals/hamed-mozaffari-maaref"
   twitter: ""
@@ -25,7 +25,7 @@ links:
 accent_color: "#1a7a6d"      # theme color; light and dark variants are derived automatically
 dark_mode: true              # set to false to disable dark mode entirely
 math: false                  # true loads MathJax on every page; or add `math: true` to individual pages
-description: "Academic webpage of Dr. Richard Feynman"
+description: "Academic webpage of Dr. M. Hamed Mozaffari — AI, computer vision, and remote sensing for the built environment"
 
 # When deploying with the included GitHub Actions workflow these are filled
 # in automatically from your Pages settings (user site, project site, or
@@ -49,12 +49,12 @@ analytics:
 nav_pages:
   - name: about
   - name: publications
-  - name: talks
   - name: research
+  - name: project
   - name: software
   - name: team
   - name: teaching
-  - name: blog
+ # - name: blog
 
 # ============================================================
 # STEP 5: Publications (assets/ref.bib)
@@ -62,8 +62,8 @@ nav_pages:
 # Your name is bolded in the publication list. Write it exactly as it
 # appears in the rendered list ("Last, F. M."); list the longest form first.
 scholar:
-  last_name: Feynman
-  first_name: ["R. P.", "R."]
+  last_name: Mozaffari
+  first_name: ["M. Hamed", "Mohammad Hamed", "Hamed", "M."]
   style: citesty
   locale: en
   source: /assets/
