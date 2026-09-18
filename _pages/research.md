@@ -11,14 +11,16 @@ permalink: /research/
 <div class="research-card">
 <div class="research-body">
 <h2 class="research-title">Artificial Intelligence</h2>
-<p class="research-desc">Developing and applying AI-driven algorithms for predictive modelling, data analytics, and automation across multidisciplinary research domains. Recent work includes deep learning for flashover prediction, large language models for document and contract analysis, and generative AI for fire safety applications.</p>
 <img src="{{ '/images/Artificial Intelligence.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="AI processor">
+<p class="research-desc">Developing and applying AI-driven algorithms for predictive modelling, data analytics, and automation across multidisciplinary research domains. Recent work includes deep learning for flashover prediction, large language models for document and contract analysis, and generative AI for fire safety applications.</p>
+
 </div>
 </div>
 
 <div class="research-card">
 <div class="research-body">
 <h2 class="research-title">Computer Vision</h2>
+<img src="{{ '/images/Computer Vision.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Camera lens with data overlay">
 <p class="research-desc">Advancing visual data analysis for object recognition, spatial mapping, and quantitative image-based assessment in scientific applications. This includes convolutional and transformer architectures for detection and segmentation, and thermal imagery analysis for early anomaly detection in critical infrastructure.</p>
 </div>
 </div>
@@ -33,6 +35,7 @@ permalink: /research/
 <div class="research-card">
 <div class="research-body">
 <h2 class="research-title">Robotics and Automation</h2>
+<img src="{{ '/Robotics and Automation.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Industrial robotic arm">
 <p class="research-desc">Exploring robotic technologies and automated systems that improve precision, efficiency, and safety in construction and infrastructure research. Work spans autonomous mobile robots, UAV platforms, and ROS-based development for site surveying and quality control.</p>
 </div>
 </div>
