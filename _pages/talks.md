@@ -1,5 +1,5 @@
 ---
-title: "Talks"
+title: "Projects"
 layout: page
 permalink: /talks/
 ---
