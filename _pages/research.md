@@ -12,6 +12,7 @@ permalink: /research/
 <div class="research-body">
 <h2 class="research-title">Artificial Intelligence</h2>
 <p class="research-desc">Developing and applying AI-driven algorithms for predictive modelling, data analytics, and automation across multidisciplinary research domains. Recent work includes deep learning for flashover prediction, large language models for document and contract analysis, and generative AI for fire safety applications.</p>
+<img src="{{ '/images/Artificial Intelligence.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="AI processor">
 </div>
 </div>
 
