@@ -26,8 +26,8 @@ The common thread is turning visual and sensor data into decisions that engineer
 </div>
 
 <div class="banner-frame" markdown="0">
-<img src="{{ '/images/banner.webp' | relative_url }}" alt="Research banner" width="1400" height="449" loading="lazy">
-<div class="banner-caption">Add your own caption here.</div>
+<img src="{{ '/images/artificial.jpeg' | relative_url }}" alt="Artificial intelligence and computer vision applied to the built environment" width="1400" height="449" loading="lazy">
+<div class="banner-caption">Artificial intelligence and computer vision for the built environment.</div>
 </div>
 
 {% capture selected %}{% bibliography --query @*[selected=true] %}{% endcapture %}
