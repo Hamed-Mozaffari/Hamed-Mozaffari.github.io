@@ -35,7 +35,7 @@ permalink: /research/
 <div class="research-card">
 <div class="research-body">
 <h2 class="research-title">Robotics and Automation</h2>
-<img src="{{ '/Robotics and Automation.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Industrial robotic arm">
+<img src="{{ '/images/Robotics and Automation.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Industrial robotic arm">
 <p class="research-desc">Exploring robotic technologies and automated systems that improve precision, efficiency, and safety in construction and infrastructure research. Work spans autonomous mobile robots, UAV platforms, and ROS-based development for site surveying and quality control.</p>
 </div>
 </div>
