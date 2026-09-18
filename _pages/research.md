@@ -28,7 +28,7 @@ permalink: /research/
 <div class="research-card">
 <div class="research-body">
 <h2 class="research-title">Remote Sensing and GIS</h2>
-  <img src="{{ '/images/Remote Sensing and GIS.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Remote Sensing">
+  <img src="{{ '/images/Remote Sensing.jpg' | relative_url }}" class="research-thumb" width="400" height="200" alt="Remote Sensing">
 <p class="research-desc">Applying satellite, drone, and thermographic imagery together with spectral analysis to infrastructure and construction monitoring. The focus is on building tools for large-area surveillance, hazard detection, and geospatial data interpretation, including hyperspectral imaging and LiDAR.</p>
 </div>
 </div>
