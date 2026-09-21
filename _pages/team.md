@@ -46,11 +46,6 @@ permalink: /team/
 
 <div class="team-grid team-grid-rich" markdown="0">
 {% for member in students %}{% include team_card.html member=member %}{% endfor %}
-<div class="team-card team-card-rich">
-<span class="team-portrait"><img src="{{ '/images/team/open-position.svg' | relative_url }}" class="team-photo" alt="Open position" width="400" height="500" loading="lazy"></span>
-<h3 class="team-name">This could be you!</h3>
-<p class="team-info">See openings for more info</p>
-</div>
 </div>
 
 {% if site.data.alumni and site.data.alumni.size > 0 %}
