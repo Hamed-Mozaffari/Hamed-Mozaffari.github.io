@@ -42,6 +42,17 @@ analytics:
   goatcounter: ""        # GoatCounter: your code, e.g. jsmith (for jsmith.goatcounter.com)
 
 # ============================================================
+# Team member profile pages (_people/)
+# ============================================================
+# Every file in _people/ becomes its own page at /team/<file-name>/
+# (e.g. _people/hamed-mozaffari.md  ->  /team/hamed-mozaffari/).
+# The Team page builds its cards from these files automatically.
+collections:
+  people:
+    output: true
+    permalink: /team/:name/
+
+# ============================================================
 # STEP 4: Choose Your Pages (comment out any you don't need)
 # ============================================================
 # Each name is a page in _pages/. Add `label: Papers` to change the
