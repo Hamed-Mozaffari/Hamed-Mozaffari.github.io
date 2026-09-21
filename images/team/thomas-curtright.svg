@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-  <rect width="200" height="200" rx="100" fill="#0891b2"/>
-  <text x="100" y="118" font-family="Georgia,serif" font-size="72" font-weight="700" fill="white" text-anchor="middle">TC</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="TC">
+  <rect width="400" height="500" fill="#E2DED6"/>
+  <circle cx="200" cy="200" r="84" fill="#C4BFB4"/>
+  <text x="200" y="224" text-anchor="middle" font-family="Georgia, 'Source Serif 4', serif" font-size="62" font-weight="700" fill="#F3F1EC">TC</text>
+  <path d="M64 500c0-79 61-143 136-143s136 64 136 143z" fill="#C4BFB4"/>
 </svg>

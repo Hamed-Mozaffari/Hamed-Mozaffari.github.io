@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500" role="img" aria-label="Open position">
+  <rect width="400" height="500" fill="#E2DED6"/>
+  <circle cx="200" cy="200" r="84" fill="none" stroke="#C4BFB4" stroke-width="6" stroke-dasharray="14 12"/>
+  <text x="200" y="226" text-anchor="middle" font-family="Georgia, 'Source Serif 4', serif" font-size="70" font-weight="700" fill="#C4BFB4">?</text>
+  <path d="M64 500c0-79 61-143 136-143s136 64 136 143z" fill="none" stroke="#C4BFB4" stroke-width="6" stroke-dasharray="14 12"/>
+</svg>
