@@ -1,6 +1,7 @@
 ---
 layout: person
-order: 2
+order: 10
+group: students
 title: "George Zweig"
 info: "PhD Student, Quark Model"
 photo: team/george-zweig.svg
@@ -15,6 +16,8 @@ interests:
 education:
   - "M.Sc. in Physics, Example University, 2022"
   - "B.Sc. in Physics, Example University, 2020"
+alma_mater:
+  - "Example University"
 ---
 
 George joined the group as a PhD student and works on the quark model.

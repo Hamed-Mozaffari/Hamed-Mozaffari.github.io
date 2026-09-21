@@ -1,6 +1,7 @@
 ---
 layout: person
-order: 99                       # position on the Team page (small number = first)
+order: 99                       # position inside its section (small number = first)
+group: students                 # students | staff | management
 title: "Full Name"              # the person's name
 info: "PhD Student, Computer Vision"   # the line under the name
 photo: team/photo-file.jpg      # file inside images/ (e.g. images/team/photo-file.jpg)
@@ -12,10 +13,12 @@ linkedin: "https://www.linkedin.com/in/username"
 researchgate: ""
 orcid: ""
 cv: "papers/name-cv.pdf"
-interests:
+interests:                      # shown on the Team page card
   - Computer Vision
   - Machine Learning
-education:
+alma_mater:                     # shown on the Team page card — keep these short
+  - "University of Ottawa"
+education:                      # shown on the person's own page — full sentences
   - "M.Sc. in ..., University, 2023"
   - "B.Sc. in ..., University, 2021"
 awards:

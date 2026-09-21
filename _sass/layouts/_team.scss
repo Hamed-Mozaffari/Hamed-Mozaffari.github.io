@@ -138,3 +138,82 @@
     border-bottom: none;
   }
 }
+
+// Grouped team sections (PI / Staff / Graduate Students) — richer cards that
+// also show research interests and alma mater, like a lab directory.
+.team-grid-rich {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  align-items: stretch;
+}
+
+.team-card-rich {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: var(--space-6);
+
+  .team-photo {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-name,
+  .team-info {
+    text-align: center;
+  }
+
+  .team-info {
+    margin-bottom: 0;
+  }
+
+  .team-meta {
+    margin-top: var(--space-4);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--border-color);
+  }
+
+  .team-meta-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin: 0 0 var(--space-2);
+  }
+
+  .team-meta-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+
+    li {
+      position: relative;
+      padding-left: var(--space-4);
+      font-size: 0.8125rem;
+      line-height: 1.55;
+      color: var(--text-secondary);
+    }
+
+    li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.6em;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background-color: var(--accent);
+      opacity: 0.55;
+    }
+  }
+
+  .team-links {
+    margin-top: auto;
+    padding-top: var(--space-4);
+    margin-bottom: 0;
+  }
+}

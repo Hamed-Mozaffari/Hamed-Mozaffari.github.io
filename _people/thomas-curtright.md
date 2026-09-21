@@ -1,12 +1,16 @@
 ---
 layout: person
-order: 4
+order: 12
+group: students
 title: "Thomas Curtright"
 info: "PhD Student, Quantum Field Theory"
 photo: team/thomas-curtright.svg
 email: thomas.curtright@example.com
 interests:
   - Quantum Field Theory
+alma_mater:
+  - "Example University"
+  - "Example Polytechnic"
 ---
 
 Thomas is a PhD student working on quantum field theory.
