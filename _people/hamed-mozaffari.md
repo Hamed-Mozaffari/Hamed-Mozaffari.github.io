@@ -19,6 +19,8 @@ interests:
   - Robotics & Automation
   - Internet of Things
   - Digital Twins & BIM
+alma_mater:                      # only the latest degree — shown on the Team card
+  - "Ph.D., University of Ottawa, Canada"
 education:
   - "Ph.D. in Electrical Engineering and Computer Science (Artificial Intelligence and Computer Vision), University of Ottawa, Canada, 2020"
   - "M.Sc. in Electrical Engineering and Computer Science (Electronics), University of Birjand, Iran, 2012"

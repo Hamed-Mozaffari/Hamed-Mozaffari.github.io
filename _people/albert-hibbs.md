@@ -8,8 +8,8 @@ photo: team/albert-hibbs.svg
 email: albert.hibbs@example.com
 interests:
   - Quantum Mechanics
-alma_mater:
-  - "Example Institute of Technology"
+alma_mater:                      # only the latest degree — shown on the Team card
+  - "M.Sc., Example Institute of Technology, Canada"
 ---
 
 Albert is a PhD student working on quantum mechanics.

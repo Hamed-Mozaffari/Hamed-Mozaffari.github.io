@@ -9,8 +9,8 @@ email: robert.hellwarth@example.com
 interests:
   - Computer Vision
   - Remote Sensing
-alma_mater:
-  - "Example University"
+alma_mater:                      # only the latest degree — shown on the Team card
+  - "Ph.D., Example University, Canada"
 education:
   - "Ph.D. in Electrical Engineering, Example University, 2019"
 ---

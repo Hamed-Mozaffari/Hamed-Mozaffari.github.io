@@ -16,8 +16,8 @@ cv: "papers/name-cv.pdf"
 interests:                      # shown on the Team page card
   - Computer Vision
   - Machine Learning
-alma_mater:                     # shown on the Team page card — keep these short
-  - "University of Ottawa"
+alma_mater:                     # only the latest degree — shown on the Team card
+  - "M.Sc., University of Ottawa, Canada"
 education:                      # shown on the person's own page — full sentences
   - "M.Sc. in ..., University, 2023"
   - "B.Sc. in ..., University, 2021"

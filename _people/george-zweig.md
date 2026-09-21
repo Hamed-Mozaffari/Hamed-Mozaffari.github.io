@@ -16,8 +16,8 @@ interests:
 education:
   - "M.Sc. in Physics, Example University, 2022"
   - "B.Sc. in Physics, Example University, 2020"
-alma_mater:
-  - "Example University"
+alma_mater:                      # only the latest degree — shown on the Team card
+  - "M.Sc., Example University, Canada"
 ---
 
 George joined the group as a PhD student and works on the quark model.

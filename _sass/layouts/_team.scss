@@ -139,10 +139,15 @@
   }
 }
 
-// Grouped team sections (PI / Staff / Graduate Students) — richer cards that
-// also show research interests and alma mater, like a lab directory.
+// =============================================================
+// Grouped team sections (PI / Staff / Graduate Students)
+// Directory-style cards: portrait photo, name, role, research
+// interest tags and alma mater. Everything else lives on the
+// person's own page at /team/<name>/.
+// =============================================================
+
 .team-grid-rich {
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   align-items: stretch;
 }
 
@@ -150,22 +155,43 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: var(--space-6);
+  padding: var(--space-5);
+
+  // Portrait frame — keeps the zoom-on-hover inside rounded corners
+  .team-portrait {
+    display: block;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-4);
+    background-color: var(--bg-secondary);
+    background-image: none;
+  }
 
   .team-photo {
-    display: block;
-    width: 110px;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
   }
 
-  .team-name,
-  .team-info {
-    text-align: center;
+  .team-name {
+    text-align: left;
+    font-size: 1.0625rem;
+    line-height: 1.3;
+    margin-bottom: var(--space-1);
   }
 
   .team-info {
+    text-align: left;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
     margin-bottom: 0;
   }
 
@@ -173,6 +199,11 @@
     margin-top: var(--space-4);
     padding-top: var(--space-4);
     border-top: 1px solid var(--border-color);
+  }
+
+  // Bottom-align the last block so the cards in a row line up
+  .team-meta-last {
+    margin-top: auto;
   }
 
   .team-meta-label {
@@ -185,35 +216,31 @@
     margin: 0 0 var(--space-2);
   }
 
-  .team-meta-list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  .team-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-1);
+  }
 
-    li {
-      position: relative;
-      padding-left: var(--space-4);
-      font-size: 0.8125rem;
-      line-height: 1.55;
+  .chip {
+    font-size: 0.6875rem;
+    padding: 0.125rem 0.625rem;
+    cursor: default;
+
+    &:hover {
+      background-color: var(--bg-secondary);
       color: var(--text-secondary);
-    }
-
-    li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0.6em;
-      width: 4px;
-      height: 4px;
-      border-radius: 50%;
-      background-color: var(--accent);
-      opacity: 0.55;
     }
   }
 
-  .team-links {
-    margin-top: auto;
-    padding-top: var(--space-4);
-    margin-bottom: 0;
+  .team-alma {
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin: 0 0 var(--space-1);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

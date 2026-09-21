@@ -29,38 +29,10 @@ permalink: /team/
 
 ## PI
 
-<div class="section-card" markdown="0">
-<div class="pi-card">
-{% if pi_person %}<a href="{{ pi_person.url | relative_url }}"><img src="{{ site.photo | prepend: '/images/' | relative_url }}" class="pi-photo" alt="{{ site.name }}" width="160" height="160"></a>{% else %}<img src="{{ site.photo | prepend: '/images/' | relative_url }}" class="pi-photo" alt="{{ site.name }}" width="160" height="160">{% endif %}
-<div>
-<h3 class="pi-name">{% if pi_person %}<a href="{{ pi_person.url | relative_url }}">{{ site.name }}</a>{% else %}{{ site.name }}{% endif %}</h3>
-<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, {{ site.institution }}</p>
-<div class="pi-links">
-{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email" aria-label="Email">{% include icon.html name="envelope" %}</a>{% endif %}
-{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar" aria-label="Google Scholar">{% include icon.html name="google-scholar" %}</a>{% endif %}
-{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.links.cv | prepend: '/' | relative_url }}" class="icon-link" title="CV" aria-label="CV">{% include icon.html name="cv" %}</a>{% endif %}
-{% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" class="icon-link" title="GitHub" aria-label="GitHub">{% include icon.html name="github" %}</a>{% endif %}
-{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate" aria-label="ResearchGate">{% include icon.html name="researchgate" %}</a>{% endif %}
-</div>
-{% if site.data.pi[0].education %}
-<ul style="margin-top: var(--space-4);">
-{% for education in site.data.pi[0].education %}
-<li>{{ education | replace: "-","&#8211;" }}</li>
-{% endfor %}
-</ul>
-{% endif %}
-{% if pi_person %}
-<p style="margin-top: var(--space-4);"><a href="{{ pi_person.url | relative_url }}">Full profile &rarr;</a></p>
-{% endif %}
-</div>
-</div>
-</div>
-
-{% if management.size > 0 %}
 <div class="team-grid team-grid-rich" markdown="0">
+{% if pi_person %}{% include team_card.html member=pi_person %}{% endif %}
 {% for member in management %}{% include team_card.html member=member %}{% endfor %}
 </div>
-{% endif %}
 
 {% if staff.size > 0 %}
 ## Staff
@@ -75,7 +47,7 @@ permalink: /team/
 <div class="team-grid team-grid-rich" markdown="0">
 {% for member in students %}{% include team_card.html member=member %}{% endfor %}
 <div class="team-card team-card-rich">
-<img src="{{ '/images/rock.jpg' | relative_url }}" class="team-photo" alt="Open position" width="110" height="110" loading="lazy">
+<span class="team-portrait"><img src="{{ '/images/team/open-position.svg' | relative_url }}" class="team-photo" alt="Open position" width="400" height="500" loading="lazy"></span>
 <h3 class="team-name">This could be you!</h3>
 <p class="team-info">See openings for more info</p>
 </div>

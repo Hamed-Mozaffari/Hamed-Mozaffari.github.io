@@ -1,29 +1,22 @@
 {% assign m = include.member %}
 <div class="team-card team-card-rich">
-<a href="{{ m.url | relative_url }}"><img src="{{ m.photo | prepend: '/images/' | relative_url }}" class="team-photo" alt="{{ m.title }}" width="110" height="110" loading="lazy"></a>
+<a class="team-portrait" href="{{ m.url | relative_url }}"><img src="{{ m.photo | prepend: '/images/' | relative_url }}" class="team-photo" alt="{{ m.title }}" width="400" height="500" loading="lazy"></a>
 <h3 class="team-name"><a href="{{ m.url | relative_url }}">{{ m.title }}</a></h3>
-<p class="team-info">{{ m.info }}</p>
+<p class="team-info">{{ m.info }}{% if m.affiliation %}, {{ m.affiliation }}{% endif %}</p>
 {% if m.interests and m.interests.size > 0 %}
 <div class="team-meta">
 <p class="team-meta-label">Research interests</p>
-<ul class="team-meta-list">
-{% for item in m.interests %}<li>{{ item }}</li>{% endfor %}
-</ul>
+<div class="team-chips">
+{% for item in m.interests %}<span class="chip chip-muted">{{ item }}</span>{% endfor %}
+</div>
 </div>
 {% endif %}
-{% if m.alma_mater and m.alma_mater.size > 0 %}
-<div class="team-meta">
-<p class="team-meta-label">{% if m.alma_mater.size > 1 %}Alma maters{% else %}Alma mater{% endif %}</p>
-<ul class="team-meta-list">
-{% for item in m.alma_mater %}<li>{{ item }}</li>{% endfor %}
-</ul>
+{% comment %}Only the most recent degree is shown here; the full list lives on the person's own page.{% endcomment %}
+{% if m.alma_mater and m.alma_mater != "" %}
+{% if m.alma_mater.first %}{% assign alma = m.alma_mater | first %}{% else %}{% assign alma = m.alma_mater %}{% endif %}
+<div class="team-meta team-meta-last">
+<p class="team-meta-label">Alma mater</p>
+<p class="team-alma">{{ alma }}</p>
 </div>
 {% endif %}
-<div class="team-links">
-<a href="{{ m.url | relative_url }}" class="icon-link" title="Full profile" aria-label="Full profile">{% include icon.html name="house" %}</a>
-{% if m.email %}<a href="mailto:{{ m.email }}" class="icon-link" title="Email" aria-label="Email">{% include icon.html name="envelope" %}</a>{% endif %}
-{% if m.scholar %}<a href="{{ m.scholar }}" class="icon-link" title="Google Scholar" aria-label="Google Scholar">{% include icon.html name="google-scholar" %}</a>{% endif %}
-{% if m.github %}<a href="{{ m.github }}" class="icon-link" title="GitHub" aria-label="GitHub">{% include icon.html name="github" %}</a>{% endif %}
-{% if m.linkedin %}<a href="{{ m.linkedin }}" class="icon-link" title="LinkedIn" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a>{% endif %}
-</div>
 </div>

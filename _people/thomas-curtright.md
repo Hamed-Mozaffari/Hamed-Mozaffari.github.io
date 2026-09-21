@@ -8,9 +8,8 @@ photo: team/thomas-curtright.svg
 email: thomas.curtright@example.com
 interests:
   - Quantum Field Theory
-alma_mater:
-  - "Example University"
-  - "Example Polytechnic"
+alma_mater:                      # only the latest degree — shown on the Team card
+  - "M.Sc., Example University, Canada"
 ---
 
 Thomas is a PhD student working on quantum field theory.
