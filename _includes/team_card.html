@@ -14,7 +14,8 @@
 {% comment %}Only the most recent degree is shown here; the full list lives on the person's own page.{% endcomment %}
 {% if m.alma_mater and m.alma_mater != "" %}
 {% if m.alma_mater.first %}{% assign alma = m.alma_mater | first %}{% else %}{% assign alma = m.alma_mater %}{% endif %}
-<div class="team-meta team-meta-last">
+<div class="team-spacer" aria-hidden="true"></div>
+<div class="team-meta">
 <p class="team-meta-label">Alma mater</p>
 <p class="team-alma">{{ alma }}</p>
 </div>

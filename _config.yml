@@ -3,6 +3,17 @@
 # ============================================================
 name: "M. Hamed Mozaffari"
 title: "Research Officer"
+
+# ============================================================
+# Lab identity — used for the site branding (navbar, browser tab,
+# footer). Leave `lab_name` empty to brand the site with your own
+# name instead.
+# ============================================================
+lab_name: "DiCON Lab"
+lab_full: "Digital and Intelligent Construction Laboratory"
+lab_initials: "DC"   # two letters for the small icon in the navbar / browser tab
+hide_sidebar_profile: true   # true = no PI card in the home page sidebar
+
 institution: "National Research Council Canada / Conseil national de recherches Canada"
 email: MHamed.MozaffariMaaref@nrc-cnrc.gc.ca
 photo: Hamed.jpeg  # place your photo in images/
@@ -25,7 +36,7 @@ links:
 accent_color: "#1a7a6d"      # theme color; light and dark variants are derived automatically
 dark_mode: true              # set to false to disable dark mode entirely
 math: false                  # true loads MathJax on every page; or add `math: true` to individual pages
-description: "Academic webpage of Dr. M. Hamed Mozaffari — AI, computer vision, and remote sensing for the built environment"
+description: "DiCON Lab — Digital and Intelligent Construction Laboratory. AI, computer vision, remote sensing and robotics for the built environment."
 
 # When deploying with the included GitHub Actions workflow these are filled
 # in automatically from your Pages settings (user site, project site, or

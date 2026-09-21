@@ -3,6 +3,7 @@
     <div>
       <h2 class="footer-heading">About</h2>
       <p>
+        {% if site.lab_name and site.lab_name != "" %}<strong>{{ site.lab_name }}</strong><br>{% if site.lab_full %}{{ site.lab_full }}<br>{% endif %}{% endif %}
         {{ site.name }}<br>
         {{ site.title }}<br>
         {{ site.institution }}
@@ -26,7 +27,7 @@
   </div>
   <div class="footer-grid">
     <div class="footer-copyright" style="grid-column: 1 / -1;">
-      &copy; {{ "now" | date: "%Y" }} {{ site.name | escape }}
+      &copy; {{ "now" | date: "%Y" }} {% if site.lab_name and site.lab_name != "" %}{{ site.lab_name | escape }} &middot; {% endif %}{{ site.name | escape }}
     </div>
   </div>
 </footer>

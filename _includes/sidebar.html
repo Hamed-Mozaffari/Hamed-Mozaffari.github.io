@@ -1,7 +1,11 @@
+{% unless site.hide_sidebar_profile %}
 <div class="profile-card">
-<a href="{{ '/about' | relative_url }}">
+{% assign pi_person = site.people | where: "pi", true | first %}
+{% assign pi_url = '/about' %}{% if pi_person %}{% assign pi_url = pi_person.url %}{% endif %}
+<a href="{{ pi_url | relative_url }}">
 <img src="{{ site.photo | prepend: '/images/' | relative_url }}" class="profile-photo" alt="{{ site.name }}" width="140" height="140" fetchpriority="high">
 </a>
+{% if site.lab_name and site.lab_name != "" %}<p class="meta-label" style="text-align: center;">Principal Investigator</p>{% endif %}
 <p class="profile-name">{{ site.name }}</p>
 <p class="profile-title">{{ site.title }}</p>
 <p class="profile-institution">{{ site.institution }}</p>
@@ -23,8 +27,9 @@
 </ul>
 {% endif %}
 </div>
+{% endunless %}
 
-<div class="section-card" style="margin-top: var(--space-6);">
+<div class="section-card"{% unless site.hide_sidebar_profile %} style="margin-top: var(--space-6);"{% endunless %}>
 <h2 style="margin-top: 0; font-size: 1.125rem;">News</h2>
 <div class="news-timeline">
 {% for article in site.data.news limit:3 %}

@@ -146,16 +146,40 @@
 // person's own page at /team/<name>/.
 // =============================================================
 
+// Small uppercase label, used on team cards and in the sidebar
+.meta-label,
+.team-card-rich .team-meta-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  margin: 0 0 var(--space-2);
+}
+
 .team-grid-rich {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   align-items: stretch;
+  gap: var(--space-8) var(--space-6);
 }
 
+// No card chrome here: the photo is the only framed element, the text below
+// it sits directly on the page, like a printed directory entry.
 .team-card-rich {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: var(--space-5);
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+
+  &:hover {
+    box-shadow: none;
+    transform: none;
+  }
 
   // Portrait frame — keeps the zoom-on-hover inside rounded corners
   .team-portrait {
@@ -201,9 +225,10 @@
     border-top: 1px solid var(--border-color);
   }
 
-  // Bottom-align the last block so the cards in a row line up
-  .team-meta-last {
-    margin-top: auto;
+  // A flexible spacer bottom-aligns the last block across a row, while the
+  // block itself keeps the same gap above its rule as every other block.
+  .team-spacer {
+    flex: 1 1 auto;
   }
 
   .team-meta-label {

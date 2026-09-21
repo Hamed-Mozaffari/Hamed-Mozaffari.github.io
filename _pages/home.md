@@ -4,8 +4,8 @@ layout: homelay
 permalink: /
 ---
 
-<h1 class="home-hero">{{ site.name }}</h1>
-<p class="home-hero-sub">{{ site.title }}, {{ site.institution }}</p>
+<h1 class="home-hero">{{ site.lab_name | default: site.name }}</h1>
+<p class="home-hero-sub">{{ site.lab_full }}</p>
 
 <div class="chip-container" markdown="0">
 <a href="{{ '/research' | relative_url }}" class="chip">Artificial Intelligence</a>
@@ -16,8 +16,8 @@ permalink: /
 <a href="{{ '/research' | relative_url }}" class="chip">Digital Twins &amp; BIM</a>
 </div>
 
-My research applies artificial intelligence, computer vision, and remote sensing to the built environment.
-Working with the Industrialized and Digitalized Construction team at the National Research Council Canada, I develop tools that make construction safer, faster, and more precise — from autonomous drones that inspect confined structures, to cloud-based models that monitor infrastructure and detect wildfire risk across large landscapes.
+{{ site.lab_name }} applies artificial intelligence, computer vision, and remote sensing to the built environment.
+Working with the Industrialized and Digitalized Construction team at the National Research Council Canada, we develop tools that make construction safer, faster, and more precise — from autonomous drones that inspect confined structures, to cloud-based models that monitor infrastructure and detect wildfire risk across large landscapes.
 The common thread is turning visual and sensor data into decisions that engineers can act on.
 
 <div class="callout callout-success" markdown="0">
@@ -30,6 +30,12 @@ The common thread is turning visual and sensor data into decisions that engineer
 <div class="banner-caption">Artificial intelligence and computer vision for the built environment.</div>
 </div>
 
+## What we work on
+
+Our work spans modular, prefabricated, and on-site construction, and brings together six threads: deep learning and large language models for prediction and document analysis; computer vision for detection, segmentation, and thermal inspection; satellite, drone, and hyperspectral imagery for large-area monitoring; autonomous robots and UAV platforms for surveying and quality control; connected sensors for continuous condition monitoring; and digital twins that keep a building's model in step with the building itself.
+
+<p><a href="{{ '/research' | relative_url }}">Explore our research areas &rarr;</a></p>
+
 {% capture selected %}{% bibliography --query @*[selected=true] %}{% endcapture %}
 {% if selected contains "pub-entry" %}
 ## Selected publications
@@ -40,9 +46,13 @@ The common thread is turning visual and sensor data into decisions that engineer
 </div>
 {% endif %}
 
-## About me
+## The team
 
-I am a Research Officer at the Construction Research Centre, National Research Council Canada, where I work on artificial intelligence, robotics, remote sensing, and IoT for modular, prefabricated, and on-site construction.
-I hold a Ph.D. in Electrical Engineering and Computer Science from the University of Ottawa, with a specialization in artificial intelligence and computer vision.
-Alongside my research, I am a Status-Only Assistant Professor in Mechanical and Industrial Engineering at the University of Toronto and a part-time lecturer at Carleton University, where I teach remote sensing technologies.
-I am a licensed Professional Engineer, a Senior Member of IEEE, a certified thermographer, and an advanced UAV pilot.
+{% assign pi_person = site.people | where: "pi", true | first %}
+The lab is led by {% if pi_person %}<a href="{{ pi_person.url | relative_url }}">{{ site.name }}</a>{% else %}{{ site.name }}{% endif %}, {{ site.title }} at the Construction Research Centre, National Research Council Canada, Status-Only Assistant Professor in Mechanical and Industrial Engineering at the University of Toronto, and a part-time lecturer at Carleton University.
+
+<p><a href="{{ '/team' | relative_url }}">Meet the team &rarr;</a></p>
+
+## Join us
+
+We are looking for new team members. If you work on artificial intelligence, computer vision, remote sensing, or robotics for the built environment and want to collaborate, <a href="mailto:{{ site.email }}">get in touch</a>.
