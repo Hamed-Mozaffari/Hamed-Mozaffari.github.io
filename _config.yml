@@ -13,6 +13,7 @@ lab_name: "DiCON Lab"
 lab_full: "Digital and Intelligent Construction Laboratory"
 lab_initials: "DC"   # two letters for the small icon in the navbar / browser tab
 hide_sidebar_profile: true   # true = no PI card in the home page sidebar
+hide_news: true              # true = no News list on the site
 
 institution: "National Research Council Canada / Conseil national de recherches Canada"
 email: MHamed.MozaffariMaaref@nrc-cnrc.gc.ca

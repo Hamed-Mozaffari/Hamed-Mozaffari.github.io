@@ -14,6 +14,37 @@
   }
 }
 
+// Full-width landing page (no sidebar): a wider measure and more space
+// between sections, so each one reads as its own block.
+.home-content-wide {
+  // A single centred column: text, images and cards all share one width, so
+  // every block starts and ends on the same line and the page is symmetric.
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+
+  p,
+  li {
+    max-width: none;
+  }
+
+  > h2 {
+    margin-top: var(--space-12);
+  }
+
+  > .banner-frame,
+  > .callout,
+  > .section-card {
+    margin-top: var(--space-10);
+    margin-bottom: var(--space-10);
+  }
+
+  > p:first-of-type {
+    font-size: 1.125rem;
+    line-height: 1.8;
+  }
+}
+
 .home-content {
   min-width: 0;
 

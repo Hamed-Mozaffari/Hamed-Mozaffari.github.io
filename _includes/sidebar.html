@@ -29,6 +29,7 @@
 </div>
 {% endunless %}
 
+{% unless site.hide_news %}
 <div class="section-card"{% unless site.hide_sidebar_profile %} style="margin-top: var(--space-6);"{% endunless %}>
 <h2 style="margin-top: 0; font-size: 1.125rem;">News</h2>
 <div class="news-timeline">
@@ -41,3 +42,4 @@
 </div>
 <p style="margin-top: var(--space-4);"><a href="{{ '/allnews.html' | relative_url }}">See all news &rarr;</a></p>
 </div>
+{% endunless %}

@@ -2,6 +2,14 @@
 layout: default
 ---
 
+{% comment %}
+  The sidebar holds the PI card and the News list. When both are switched off
+  in _config.yml the page drops the second column and runs full width.
+{% endcomment %}
+{% assign has_sidebar = true %}
+{% if site.hide_sidebar_profile and site.hide_news %}{% assign has_sidebar = false %}{% endif %}
+
+{% if has_sidebar %}
 <div class="home-grid">
   <div class="home-content">
     {{ content }}
@@ -11,3 +19,8 @@ layout: default
     {% include sidebar.html %}
   </div>
 </div>
+{% else %}
+<div class="home-content home-content-wide">
+  {{ content }}
+</div>
+{% endif %}
